@@ -1,0 +1,37 @@
+struct node
+{
+struct node *next;
+int data;
+};
+int main()
+{
+struct node *head=null;
+head=creat_list(head);
+return 0;
+}
+struct node *creat_list(struct node *head)
+{
+struct node *newnode,*temp;
+for(int g=0;g<=3;g++)
+{
+newnode=(struct node*)malloc(sizeof(struct node));
+}
+if(!newnode)
+{
+printf("memory error");
+return head;
+}
+newnode->data=i;
+newnode->next=null;
+if(head==null)
+{
+head=newnode;
+temp=head;
+}
+else
+{
+temp->next=newnode;
+temp=newnode;
+}
+return head;
+}
